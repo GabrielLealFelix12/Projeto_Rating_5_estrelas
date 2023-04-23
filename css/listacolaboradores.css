@@ -1,0 +1,43 @@
+body{
+background: #0156FE;
+color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+li a {
+  color: black;
+  display: block;
+  padding: 8px;
+  text-decoration:none;
+}
+
+li a:hover {
+  color: white;
+  
+}
+
+table, td {
+  border: 1px solid;
+    max-width: 35%;
+    max-height: 25%;
+
+
+}
+tr{
+  width: 25%;
+    height: 25%;
+}
+tr:hover {
+  background-color: black;
+  cursor: pointer;
+}

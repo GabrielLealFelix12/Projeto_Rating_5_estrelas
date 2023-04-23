@@ -1,0 +1,63 @@
+
+         <!DOCTYPE html>
+         <head>
+         <meta charset="UTF-8">      
+         <title> 5 star rating </title>
+         </head>
+
+         <body>
+
+         <h1> Unidade:Djalma Batista </h1>
+         <img pfp=6428f67771508.jpg id="pfp" class="imagem_perfil" src=imagens_perfil/6428f67771508.jpg alt="img_perfil"> <br>
+         <h1> Nome:gaben </h1>
+
+         <form id="cad-colab" action="php/review_deixada.php" method="post">
+
+         <div class="rating">
+ 
+         <input type="radio" name="rating" value=5 id="5"><label for="5">☆</label>
+  
+  
+         <input type="radio" name="rating" value=4 id="4"><label for="4">☆</label>
+  
+  
+         <input type="radio" name="rating" value=3 id="3"><label for="3">☆</label>
+  
+         <input type="radio" name="rating" value=2 id="2"><label for="2">☆</label>
+  
+
+         <input type="radio" name="rating" value=1 id="1"><label for="1">☆</label>
+
+
+          </div>
+
+          <br>
+
+
+          <div class="comment">
+          <br>
+          <label for="review_empregado" style="text-align: center;">Deixe um comentário!</label>
+          <br>
+          </div>
+          <div style="display: flex; justify-content: center;">
+          <textarea id="review" name="review_empregado"
+          rows="4" cols="50"></textarea>
+          </div>
+          </form>
+           
+           <input id="review_botao" form="cad-colab" type="submit" value="ENVIAR" name="pfp">
+
+          
+          <div id="qrcode">
+          </div>
+          
+          </body>
+          <link rel="stylesheet" href="css/estrelas.css">
+          <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+          </script>
+          <script type="application/javascript" src="js/criarqrcode.js" onload="criarQrCode()">
+          </script>
+          
+
+          </html>
+         

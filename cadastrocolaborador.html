@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">      
+
+<title> Home </title>
+</head>
+
+<body id="mebody" onload="loadDoc()">
+<img id="gen-icon" src="imagens_app/gen-icon.png" alt="img_perfil">
+
+<ul>
+  <li><a href="cadastrounidade.html"> Cadastro de Unidades </a></li>
+  <li><a href="cadastrocolaborador.html"> Cadastro de Colaboradores </a></li>
+    <li><a href="listacolaboradores.html"> Lista de Colaboradores </a></li>
+  <li><a href="login.html" onclick="SaidaPage()"> Sair </a></li>
+</ul>
+<br>
+
+<div class="clear">&nbsp;</div>
+
+<form id="cad-colab" action="php/cadastrocolaborador.php" method="post" enctype="multipart/form-data">
+  <br>
+   <div class="img_colaborador">
+    <img id="output" style="max-height: 55%;max-width: 85%;" src="imagens_perfil/perfil_blank.png" alt="img_perfil">
+    <input type="file" name="fileToUpload" onchange="loadFile(event)">
+    </div>
+ <br>
+ 
+ <div class="cadastro_colaborador">
+ <label for="Nome"> Nome: </label>
+ <br>
+ <input type="text" placeholder="Nome do colaborador..." name="Nome">
+ <br>
+ </div>
+
+ <div class="cadastro_colaborador">
+ <label for="DataNcs"> Data de nascimento: </label>
+ <br>
+ <input type="text" placeholder="Data de nascimento..." name="Dat_nasc">
+ <br>
+ </div>
+
+ <div class="cadastro_colaborador">
+     <label for="RG"> RG: </label>
+     <br>
+     <input type="text" placeholder="RG..." name="RG">
+     <br>
+ </div>
+  
+  <div class="cadastro_colaborador">   
+     <label for="CPF"> CPF: </label>
+     <br>
+     <input type="text" placeholder="CPF..." name="CPF">
+     
+     <div class="clear">&nbsp;</div>
+
+    <label for="unidades">Escolha uma unidade:</label>
+    <select id="estasunidades" name="unidades">
+    </select>
+ 
+ </div>
+ <br>
+   
+<div class="clear">&nbsp;</div>
+
+</form>
+ 
+ <br> 
+
+<input id="cad_botao" type="submit" form="cad-colab" value="CADASTRAR">
+
+</body>
+
+<link rel="stylesheet" href="css/cadastrocolaborador.css">
+<script type="application/javascript" src="javascript/mudarimagem.js"></script>   
+<script type="application/javascript" src="javascript/checklogin.js"></script>
+<script type="application/javascript" src="javascript/listarunidadescadcolab.js" onload="ListarUnidades()
+"></script>   
+   
+
+</html>

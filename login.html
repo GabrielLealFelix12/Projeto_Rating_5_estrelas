@@ -1,0 +1,33 @@
+<html !DOCTYPE>
+
+<head>
+<meta charset="UTF-8">      
+<title> Login </title>
+</head>
+
+<body>
+
+<img id="gen-icon" src="imagens_app/gen-icon.png" alt="img_perfil">
+
+<div class="login_form">
+ 
+ <form id="login" action="php/login.php" method="post">
+ <label for="u_name"> Usuário: </label>
+ <br>
+ <input type="text" placeholder="Nome de usuário..." name="usuario" required>
+ <br>
+ <label for="senha"> Senha: </label>
+ <br>
+ <input type="password" placeholder="Senha..." name="senha" required>
+ <br>
+ </form>
+ <br>
+
+</div> 
+ <input id="login_botao" type="submit" form="login" value="ENTRAR">
+
+<link rel="stylesheet" href="css/login.css">
+
+</body>
+
+</html>

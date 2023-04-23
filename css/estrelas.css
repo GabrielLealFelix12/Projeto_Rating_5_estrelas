@@ -1,0 +1,66 @@
+body{
+background: #0156FE;
+color: white;
+margin: 100px auto;
+}
+
+.rating {
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+}
+
+.rating > input{
+ display:none;
+}
+
+.rating > label {
+position: relative;
+width: 1.1em;
+font-size: 10vw;
+color: #FFD700;
+cursor: pointer;
+}
+
+.rating > label::before{
+content: "\2605";
+position: absolute;
+opacity: 0;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+opacity: 1 !important;
+}
+
+.rating > input:checked ~ label:before{
+opacity:1;
+}
+
+.imagem_perfil{
+    max-width: 25%;
+  max-height:  25%;
+}
+
+.comment {
+display: flex;
+justify-content: center;
+width: 0.9 em;
+font-size: 5vw;
+}
+
+#review{
+display: flex;
+max-width: 25%;
+max-height: 25%;
+justify-content: center;
+}
+
+img{
+      display: block;
+      margin: 0 auto;
+}
+
+h1{
+   text-align: center;
+}

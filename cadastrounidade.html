@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">      
+<title> Home </title>
+</head>
+
+<body onload="loadDoc()">
+<img id="gen-icon" src="imagens_app/gen-icon.png" alt="img_perfil">
+
+<ul>
+  <li><a href="cadastrounidade.html"> Cadastro de Unidades </a></li>
+  <li><a href="cadastrocolaborador.html"> Cadastro de Colaboradores </a></li>
+    <li><a href="listacolaboradores.html"> Lista de Colaboradores </a></li>
+  <li><a href="login.html" onclick="SaidaPage()"> Sair </a></li>
+</ul>
+<br>
+
+<div class="clear">&nbsp;</div>
+
+<form id="cad-colab" action="php/cadastrounidade.php" method="post">
+  <br>
+   <div class="img_colaborador">
+    <img  style="max-height: 55%;max-width: 85%;" src="imagens_app/gen-icon.png" alt="img_perfil">
+    </div>
+ <br>
+ 
+ <div class="cadastro_unidade">
+ <label for="Nome"> Nome: </label>
+ <br>
+ <input type="text" placeholder="Nome da unidade..." name="Nome">
+ <br>
+ </div>
+
+ <div class="cadastro_unidade">
+     <label for="Endereço"> Endereço: </label>
+     <br>
+     <input type="text" placeholder="Endereço..." name="Endereco">
+     <br>
+ </div>
+  
+  <div class="cadastro_unidade">   
+     <label for="Cod-unidade"> Código: </label>
+     <br>
+     <input type="text" placeholder="Código..." name="Cod-unidade">
+     
+     <div class="clear">&nbsp;</div>
+ 
+ </div>
+ <br>
+   
+<div class="clear">&nbsp;</div>
+</form>
+ 
+ <br> 
+
+<input id="cad_botao" type="submit" form="cad-colab" value="CADASTRAR">
+
+</body>
+
+<link rel="stylesheet" href="css/cadastrounidade.css">
+<script type="application/javascript" src="javascript/checklogin.js"></script>
+</html>

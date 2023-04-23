@@ -1,0 +1,55 @@
+body{
+ background: #0156FE;
+ color: white;
+}
+
+#gen-icon{
+	display: -webkit-box;
+  margin-left: auto;
+  max-width: 10%;
+  max-height: 10%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+li a {
+  color: black;
+  display: block;
+  padding: 8px;
+  text-decoration:none;
+}
+
+li a:hover {
+  color: white;
+  
+}
+
+.img_colaborador{
+  float: left;
+  max-height: 35%;
+  max-width: 25%;
+}
+
+.cadastro_colaborador{
+     float:left;
+   }
+
+.clear{
+  clear:both;
+}
+
+#cad_botao {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
